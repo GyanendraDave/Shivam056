@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Holidays, Tours">
+    <meta name="author" content="Gateway">
+    <title>Track</title>
+
+    <!-- core CSS -->
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Style CSS -->
+
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- modernizr.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js "></script>
+
+
+</head>
+<!--/head-->
+
+<body class="homepage">
+
+    <div class="container tracker-page">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                </div>
+            </div>
+            <!--/.sidebar-offcanvas-->
+
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12" id="tracker-block">
+                        <div class="left-block">
+                            <button type="button" onclick="openTab(event, 'tracker')" id="defaultOpen" class="btn btn-default btn-lg tablinks" title="Tracker">Tracker</button>
+                            <button type="button" onclick="openTab(event, 'daily-journal')" class="btn btn-default btn-lg tablinks" title="Daily Journal">Daily Journal</button>
+                        </div>
+                        <div class="right-block">
+                            <ul>
+                                <li class="add-nfo"><a href="#" title="Add Info"><span class="sprite"></span>Add Info</a></li>
+                                <li class="edit-nfo"><a href="#" title="Edit Info"><span class="sprite"></span>Edit Info</a></li>
+                                <li class="combine-nfo"><a href="#" title="Combine Info"><span class="sprite"></span>Combine Info</a></li>
+                                <li class="print-nfo"><a href="#" title="Print Info"><span class="sprite"></span>Print Info</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-12" id="add-info-block">
+                        <div class="add-info">
+                            <h2>Refine Tracker</h2>
+                            <div class="select-date">
+                                <div class="input-append date form_datetime">
+                                    <input type="text" placehoder="From Date" id="startdate" />
+                                    <span class="add-on sprite"><i class="icon-th "></i></span>
+                                </div>
+                                <div class="input-append date form_datetime">
+                                    <input type="text" placehoder="To Date" id="enddate" />
+                                    <span class="add-on sprite"><i class="icon-th "></i></span>
+                                </div>
+
+
+                                <button type="button" class="btn btn-primary btn-lg save" title="Apply">Apply</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-xs-6.col-lg-4-->
+
+
+                    <div id="tracker" class="tabcontent col-xs-12 col-lg-12">
+
+                        <div class="tracker-block">
+                            <h3>Menstruation</h3>
+                            <div>Graph will Come here...</div>
+                        </div>
+
+                        <div class="tracker-block">
+                            <h3>Anxiety</h3>
+                            <div>Graph will Come here...</div>
+                        </div>
+
+                        <div class="tracker-block">
+                            <h3>Difficulty Concentrating</h3>
+                            <div>Graph will Come here...</div>
+                        </div>
+
+                    </div>
+
+                    <div id="daily-journal" class="tabcontent col-xs-12 col-lg-12">
+
+                        <div class="Journal-block tracker-block">
+                            <h3>Daily Journal</h3>
+                            <ul class="sorting">
+                                <label>Sort:</label>
+                                <li>
+                                    <div class="radio-btn">
+                                        <input type="radio" value="value-1" id="latest" name="sort" checked="checked" />
+                                        <label for="latest" onclick>Latest</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-btn">
+                                        <input type="radio" value="value-2" id="earliest" name="sort" />
+                                        <label for="earliest" onclick>Earliest</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="private-entries">
+                                <li>
+                                    <div class="checkbox-btn">
+                                        <input type="checkbox" value="0" id="private-entries" name="permission[]" checked="checked" />
+                                        <label for="private-entries" onclick>Hide Private Entries</label>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div id="journal-refresh">
+                                <div class="book-Journal col-xs-12 col-sm-12">
+                                    <div class="col-xs-12 col-sm-6 block-para">
+                                        <h4>Jul 12, 2017</h4>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 block-para">
+                                        <h4>Jul 14, 2017</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="book-Journal col-xs-12 col-sm-12">
+                                    <div class="col-xs-12 col-sm-6 block-para">
+                                        <h4>Jul 12, 2017</h4>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 block-para">
+                                        <h4>Jul 14, 2017</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+
+
+
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/.col-xs-12.col-sm-9-->
+
+
+    </div>
+    <!--/row-->
+
+
+
+
+
+
+
+
+    <!--JS SCRIPT-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#startdate").datepicker({
+
+                todayBtn: 1,
+                autoclose: true,
+
+
+            }).on('changeDate', function(selected) {
+                var minDate = new Date(selected.date.valueOf());
+                $('#enddate').datetimepicker('setStartDate', minDate);
+            });
+
+            $("#enddate").datepicker();
+        });
+    </script>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+
+</body>
+
+</html>

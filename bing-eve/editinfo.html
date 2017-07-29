@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Holidays, Tours">
+    <meta name="author" content="Gateway">
+    <title>Edit Info</title>
+
+    <!-- core CSS -->
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Style CSS -->
+
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- modernizr.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js "></script>
+</head>
+<!--/head-->
+
+<body class="homepage">
+    <div class="container edit-info-page">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar">
+                <div class="list-group"> <a href="#" class="list-group-item active">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> </div>
+            </div>
+            <!--/.sidebar-offcanvas-->
+
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12" id="tracker-block">
+                        <div class="left-block">
+                            <h2>Edit Information</h2>
+                            <button type="button" onclick="openTab(event, 'tracker')" id="defaultOpen" class="btn btn-default btn-lg tablinks" title="Tracker">Tracker</button>
+                            <button type="button" onclick="openTab(event, 'daily-journal')" class="btn btn-default btn-lg tablinks" title="Daily Journal">Daily Journal</button>
+                        </div>
+                        <div class="right-block">
+                            <ul>
+                                <li class="add-nfo"><a href="#" title="Add Info"><span class="sprite"></span>Add Info</a></li>
+                                <li class="csv-nfo"><a href="#" title="Download CSV"><span class="sprite"></span>Download CSV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-12" id="edit-info-block">
+                        <div class="edit-info">
+                            <h2>Time Frame</h2>
+                            <div class="select-day-year">
+                                <div class="styled-select slate">
+                                    <select>
+                  <option>Last 30 Days</option>
+                  <option>Last 25 Days</option>
+                  <option>Last 22 Days</option>
+                </select>
+                                </div>
+                                <div class="input-append date form_datetime styled-select slate">
+                                    <select id="year">
+                  <option>Select Year</option>
+                </select>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-lg btn-search" title="Apply">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-xs-6.col-lg-4-->
+
+                    <div class="col-xs-12 col-lg-12" id="item-block">
+                        <div class="table-responsive text-center">
+                            <table class="table table-bordered ">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Mood</th>
+                                        <th>Mixed?</th>
+                                        <th>Meds?</th>
+                                        <th>Sleep</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="no">No</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="yes">Yes</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="no">No</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="yes">Yes</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="no">No</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="yes">Yes</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>07-11-2017 (Tu)</td>
+                                        <td>Mildly Elevated</td>
+                                        <td>Moderately Elevated</td>
+                                        <td class="no">No</td>
+                                        <td>8.0</td>
+                                        <td>
+                                        <a href="#" class="edit" title="Edit"><span class="sprite"></span></a>
+                                        <a href="#" class="delete-item" title="Delete"><span class="sprite"></span></a>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/.col-xs-12.col-sm-9-->
+
+    </div>
+    <!--/row-->
+
+    <!--JS SCRIPT-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script>
+        var start = 1900;
+        var end = new Date().getFullYear();
+        var options = "";
+        for (var year = start; year <= end; year++) {
+            options += "<option>" + year + "</option>";
+        }
+        document.getElementById("year").innerHTML = options;
+    </script>
+</body>
+
+</html>

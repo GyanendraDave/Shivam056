@@ -1,0 +1,73 @@
+/* xs */
+
+@media (max-width: 767px) {
+.col-xs-12{width:95%;float:none;margin:16px auto}
+#item-block{padding:20px}
+dd.tracker-page #add-info-block{padding:0 13px}
+}
+
+/* sm */
+
+@media (min-width: 768px) {
+.container{width:750px}
+.tracker-page #add-info-block{padding:0 13px}
+}
+
+
+/* md */
+
+@media (min-width: 992px) {
+.container{width:970px}
+.tracker-page #add-info-block{padding:0 34px}
+}
+
+
+/* lg */
+
+@media (min-width: 1200px) {
+.container{width:1000px}
+}
+
+
+/* XS Portrait */
+
+@media (max-width: 991px) {
+#tracker-block{background:#fff;padding:20px 16px 10px;margin-bottom:16px;min-height:90px;display:table}
+.left-block{float:none;display:table;margin:0 auto 16px}
+.right-block{float:none;display:table;margin:0 auto}
+.block-para{padding:20px 16px}
+.Journal-block .book-Journal p{font-size:16px}
+#tracker-block .btn.btn-default.btn-lg{margin:0 8px}
+#tracker-block li{margin:0 5px}
+}
+@media (max-width: 767px) {
+.book-Journal{background:#f1f1f1 center center;margin:0 auto;background-size:cover}
+}
+@media (max-width: 600px) {
+.Journal-block p{padding:20px 20px 10px;border:1px solid #e0e0e0;font-size:20px;line-height:24px}
+.tracker-page .add-info h2{float:left;font-size:17px;color:#000;margin-right:16px;margin-top:25px;width:100%}
+.tracker-page .select-date{float:none;width:200px}
+.tracker-page .input-append.date.form_datetime{display:block;margin-bottom:10px}
+.tracker-page .select-date .input-append.date.form_datetime input{width:100%}
+.select-date .btn.btn-primary.btn-lg.save{display:block}
+.select-date{float:none;margin:0 auto;padding:15px 0;display:table}
+#tracker-block li{font-size:12px;margin:0 3px}
+.tracker-block h3{width:100%;display:block}
+#daily-journal ul{display:table;margin:0 auto}
+#daily-journal ul,#daily-journal h3,#daily-journal ul li{margin-bottom:0}
+.sorting{position:relative}
+.private-entries{position:inherit}
+.left-block h2,.edit-info h2{display:block;margin:0 auto 16px;text-align:center}
+#edit-info-block h2{float:none;margin:10px auto}
+.select-day-year div{display:block;position:relative;margin:10px auto;margin-right:auto}
+.select-day-year{display:block}
+.btn.btn-primary.btn-lg.btn-search{display:block;float:none;margin:0 auto}
+.styled-select.slate{background-position:180px center;width:200px;margin:10px auto}
+.styled-select.slate select{width:200px}
+}
+@media (max-width: 479px) {
+.add-info h2{float:none;text-align:center}
+.block-para{padding:20px 0}
+.tracker-block{padding:20px 10px}
+#tracker-block .btn.btn-default.btn-lg{font-size:16px;padding:8px 16px}
+}
